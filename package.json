@@ -1,0 +1,38 @@
+{
+  "name": "@moises-herrera/stock-market-scraper",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "lint": "oxlint",
+    "test": "jest"
+  },
+  "keywords": [
+    "stock",
+    "market",
+    "api"
+  ],
+  "author": "moises-herrera",
+  "license": "MIT",
+  "description": "Stock Market Web Scraper",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "babel-jest": "^29.7.0",
+    "oxlint": "^0.5.1",
+    "playwright": "^1.45.0",
+    "ts-jest": "^29.1.5",
+    "ts-node-dev": "^2.0.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
