@@ -1,6 +1,7 @@
 {
   "name": "@moises-herrera/stock-market-scraper",
   "version": "1.0.0",
+  "description": "Stock Market Web Scraper",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,6 +10,11 @@
     "lint": "oxlint",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moises-herrera/stock-market-web-scraper.git"
+  },
+  "homepage": "https://github.com/moises-herrera/stock-market-web-scraper#readme",
   "keywords": [
     "stock",
     "market",
@@ -16,7 +22,6 @@
   ],
   "author": "moises-herrera",
   "license": "MIT",
-  "description": "Stock Market Web Scraper",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
