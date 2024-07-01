@@ -15,7 +15,7 @@ import stockMarketScraper from '@moises-herrera/stock-market-scraper';
 
 async function bootstrap() {
   try {
-    const btcUsdPrice = await stockMarketScraper.getPrice(
+    const eurUsdPrice = await stockMarketScraper.getPrice(
       'currencies', 
       'eur/usd' // Using a valid pair from es.investing.com
     );
