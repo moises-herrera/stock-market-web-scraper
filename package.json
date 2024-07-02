@@ -1,11 +1,12 @@
 {
   "name": "@moises-herrera/stock-market-scraper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Stock Market Web Scraper",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "dev": "ts-node-dev src/index.ts",
     "build": "tsup",
     "lint": "oxlint",
     "test": "jest"

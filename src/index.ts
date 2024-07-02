@@ -17,10 +17,13 @@ const getPrice = async (
   pair: string
 ): Promise<Price | undefined> => {
   const browser = await chromium.launch();
-  const page = await browser.newPage();
-  await page.goto(`${BASE_URL}/${category}/${pair}`);
 
   try {
+    const page = await browser.newPage();
+    await page.goto(`${BASE_URL}/${category}/${pair}`, {
+      timeout: 40000,
+    });
+
     const promises: Promise<{
       [key: keyof typeof LABELS]: Price[keyof Price] | null;
     }>[] = Object.entries(LABELS).map(async ([key, value]) => {
@@ -47,6 +50,7 @@ const getPrice = async (
       const value = 'value' in result ? result.value : null;
       return { ...acc, ...value };
     }, {} as Price);
+    data.date = new Date().toISOString();
 
     return data;
   } catch (error: unknown) {
